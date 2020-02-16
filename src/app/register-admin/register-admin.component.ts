@@ -10,6 +10,6 @@ export class RegisterAdminComponent implements OnInit {
   email= new FormControl('');
   password= new FormControl('');
   ngOnInit() {
-  }
+  } 
 
 }
