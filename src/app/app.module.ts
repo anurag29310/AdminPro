@@ -1,15 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
-import { AppRoutingModule } from './app-routing.module';
 import { RegisterAdminComponent } from './register-admin/register-admin.component';
 import { HeaderAdminComponent } from './layout-admin/header-admin/header-admin.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
-//import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { SidebarAdminComponent } from './layout-admin/sidebar-admin/sidebar-admin.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {ChartsAdminComponent} from './charts-admin/charts-admin.component';
+import {UsersAdminComponent} from './users-admin/users-admin.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -18,13 +21,14 @@ import {ReactiveFormsModule} from '@angular/forms';
     RegisterAdminComponent,
     HeaderAdminComponent,
     DashboardAdminComponent,
-    SidebarAdminComponent
+     SidebarAdminComponent,
+     ChartsAdminComponent,
+     UsersAdminComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-   // AngularFontAwesomeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
